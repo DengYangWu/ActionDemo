@@ -38,12 +38,4 @@ jobs:
           echo test, and deploy your project.
           echo ${{env.commit}}
           echo ${{env.runner_id}}
-          echo "${{toJSON(github.event)}}"
-      - name: checkout
-        uses: actions/checkout@v2
-        env:
-          message: ${{ github.event.head_commit.message }}
-      - name: get commit
-        run: |
-          echo Commit MSG = $commitmsg
           
