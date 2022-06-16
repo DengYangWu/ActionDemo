@@ -6,8 +6,6 @@ on:
       - edited
       - reopened
       - synchronize
-  workflow_dispatch:
-  
 jobs:
   check-commit-message:
     name: Check Commit Message
